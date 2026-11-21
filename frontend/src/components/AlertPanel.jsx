@@ -5,7 +5,7 @@ function AlertPanel({ sensorData }) {
 
   if (sensorData.fire) {
     alert = "🔥 Fire Detected";
-  } else if (sensorData.smoke > 1000) {
+  } else if (sensorData.smoke < 1000) {
     alert = "💨 Smoke Detected";
   } else if (sensorData.motion) {
     alert = "🚶 Motion Detected";
